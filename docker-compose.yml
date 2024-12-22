@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ubuntu_cuda_12_4:
+    restart: always
+    build: .
+    container_name: 'ubuntu_cuda_12_4_dev'
+    working_dir: '/root/workspace/'
+    tty: true
+    volumes:
+      - .:/root/workspace/
